@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mainPage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet"> 
+	<title>Or More Ammo</title>
+</head>
+<body>
+	<header>
+        <img src="images/bullets.png" alt="bullets"/>
+        <h1>or MORE ammo</h1>
+        <img src="images/bulletsMirror.png" alt="bullets"/>
+    </header>
+    <div id="googleAdSpace"></div>
+    <section>
+        <div id="calcUpper">
+            <div class="calcUpperColumn" id="test">
+                <h1>USD Amount</h1>
+                <input type="text" id="dollarAmount" placeholder="$">
+            </div>
+            <div class="calcUpperColumn" id="calcUpperMiddle">
+                <button id="pistol" class="weaponButtons">Pistol</button>
+                <button id="rifle" class="weaponButtons">Rifle</button>
+                <button id="shotgun" class="weaponButtons">Shotgun</button>
+            </div>
+            <div class="calcUpperColumn" id="specialty">
+                <h1 id="specialtyTitle">Specialty</h1>
+                <select>
+                    
+                </select>
+            </div>
+        </div>
+        <div id="calcTitle">Rounds of Ammo</div>
+        <div id="calcLower">
+            <div class="calcLowerColumn">
+                <div class="upperLine"></div>
+                <span class="rounds"></span>
+                <span class="rounds_of"></span>
+                <span class="caliber"></span>
+                <div class="lowerLine"></div>
+            </div>
+            <div class="calcLowerColumn">
+                <div class="upperLine"></div>
+                <span class="rounds"></span>
+                <span class="rounds_of"></span>
+                <span class="caliber"></span>
+                <div class="lowerLine"></div>
+            </div>
+            <div class="calcLowerColumn">
+                <div class="upperLine"></div>
+                <span class="rounds"></span>
+                <span class="rounds_of"></span>
+                <span class="caliber"></span>
+                <div class="lowerLine"></div>
+            </div>
+            <div class="calcLowerColumn">
+                <div class="upperLine"></div>
+                <span class="rounds"></span>
+                <span class="rounds_of"></span>
+                <span class="caliber"></span>
+                <div class="lowerLine"></div>
+            </div>
+            <div class="calcLowerColumn">
+                <div class="upperLine"></div>
+                <span class="rounds"></span>
+                <span class="rounds_of"></span>
+                <span class="caliber"></span>
+                <div class="lowerLine"></div>
+            </div>
+            <div class="calcLowerColumn">
+                <div class="upperLine"></div>
+                <span class="rounds" id="round_spec"></span>
+                <span class="rounds_of" id="spec"></span>
+                <span class="caliber" id="caliber_spec"></span>
+                <div class="lowerLine"></div>
+            </div>
+        </div>
+    </section>
+    <aside></aside>
+    <div id="formContainer">
+        <div id="formContainerTop">
+            <h1>Write to Us</h1>
+            <h3>Ask a question or send us some feedback, we're here for you.</h3>
+        </div>
+        <form action="mailSendCode.php" method="post">
+			<input class="details" type="text" name="name" placeholder="Name">
+			<input class="details" type="email" name="email" placeholder="Email address" required>
+			<input class="details" type="text" name="subject" placeholder="Subject">
+			<textarea name="message" placeholder="Message" required></textarea>
+			<input id="submitBtn" type="submit" name="submitBtn" value="Send">
+		</form>
+    </div>
+    <footer>
+        <h1>or MORE ammo</h1>
+    </footer>
+    <script src="mainPage.js"></script>
+</body>
+</html>

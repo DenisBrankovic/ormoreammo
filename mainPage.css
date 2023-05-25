@@ -1,0 +1,535 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+}
+#googleAdSpace{
+    display: none;
+}
+h3{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+header h1{
+    font-weight: bold;
+    color: white;
+}
+header img{
+    width: 30%;
+    height: 80%;
+    object-fit: contain;
+}
+section{
+    width: 80%;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+#calcUpper{
+    width: 100%;
+    height: 35vh;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.calcUpperColumn{
+    width: 33%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-image: linear-gradient(forestgreen, lightblue);
+}
+.calcUpperColumn h1{
+    font-size: 200%;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.weaponButtons{
+    width: 50%;
+    height: 20%;
+    margin-bottom: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.weaponButtons:hover{
+    opacity: 0.5;
+}
+.buttonSelected{
+    width: 50%;
+    height: 20%;
+    margin-bottom: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+#pistol{
+    background-image: url("images/gun.png");
+}
+#rifle{
+    background-image: url("images/rifle.png");
+    background-size: 80%;
+}
+#shotgun{
+    background-image: url("images/shotgun.png");
+    background-size: 90%;
+}
+.calcUpperColumn input{
+    border: solid black 2px;
+    font-size: 120%;
+}
+.calcUpperColumn select{
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    background-color: white;
+    border: solid black 2px;
+    font-size: 120%;
+}
+#dollarAmount{
+    width: 60%;
+    height: 30px;
+    outline: none;
+}
+#calcTitle{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight: 900;
+    color: forestgreen;
+}
+#calcLower{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px; 
+}
+.calcLowerColumn{
+    position: relative;
+    width: 30%;
+    min-height: 50%;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.6);
+}
+.rounds{
+    max-width: 90%;
+    font-size: 350%;
+    font-weight: bold;
+    text-align: center;
+    color: forestgreen;
+}
+.caliber{
+    max-width: 90%;
+    font-size: 220%;
+    font-weight: bold;
+    text-align: center;
+    color: forestgreen;
+}
+
+.upperLine{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    height: 2px;
+    background-color: forestgreen;
+}
+.lowerLine{
+    position: absolute;
+    bottom: 10%;
+    width: 70%;
+    height: 2px;
+    background-color: forestgreen;
+}
+.rounds_of{
+    margin: 20px 0;
+    font-size: 150%;
+    font-weight: 400;
+    color: forestgreen;
+}
+
+
+/* Contact form */
+
+
+#formContainer{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(forestgreen, white);
+}
+#formContainerTop{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: forestgreen;
+}
+#formContainer h1{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+form{
+    position: relative;
+    bottom: 13%;
+    width: 40%;
+    height: 50vh;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px 15px 0 0;
+    background-color: white;
+}
+.details{
+    width: 80%;
+    height: 20px;
+    margin: 0;
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 90%;
+    font-weight: 400;
+    color: forestgreen;
+    border-bottom: solid forestgreen 1px;
+}
+textarea{
+    width: 80%;
+    height: 40%;
+    margin-top: 20px;
+    outline: none;
+    font-size: 100%;
+    font-weight: 400;
+    color: forestgreen;
+    border: solid forestgreen 1px;
+}
+::placeholder{
+    font-size: 110%;
+    font-weight: 400;
+    color: darkgreen; 
+}
+#submitBtn{
+    position: relative;
+    right: 30%;
+    width: 100px;
+    height: 30px;
+    background-color: forestgreen;
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    width: 100vW;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+}
+footer h1{
+    color: white;
+}
+@media only screen and (max-width: 600px){
+    header{
+        height: 80px;
+        justify-content: space-around;
+    }
+    header img{
+        width: 20%;
+    }
+    h1{
+        font-size: 120%;
+    }
+    aside{
+        display: none;
+    }
+    #googleAdSpace{
+        display: initial;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+    }
+    section{
+        width: 100%;
+    }
+    #calcUpper{
+        min-height: 320px;
+        margin: 0;
+        flex-direction: column;
+        background-image: linear-gradient(forestgreen, lightblue);
+    }
+    .calcUpperColumn{
+        width: 100%;
+        min-height: 10vh;
+        margin: 0;
+        background-image: none;
+    }
+    .calcUpperColumn h1{
+        display: none;
+    }
+    #dollarAmount{
+        height: 25px;
+    }
+    .calcUpperColumn select{
+        width: 60%;
+        height: 30px;
+    }
+    .weaponButtons{
+        height: 40px;
+    }
+    .buttonSelected{
+        height: 40px;
+    }
+    #specialtyTitle{
+        display: initial;
+        font-size: 120%;
+    }
+    #calcTitle{
+        font-size: 130%;
+        text-align: center;
+    }
+    #calcLower{
+        min-height: 100vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .calcLowerColumn{
+        width: 90%;
+        min-height: 30vh;
+    }
+    .upperLine{
+        top: 15px;
+        height: 1px;
+    }
+    .lowerLine{
+        bottom: 15px;
+        height: 1px;
+    }
+    .rounds{
+        margin: 5px 0;
+        font-size: 250%;
+        text-align: center;
+        color: forestgreen;
+    }
+    .caliber{
+        margin: 5px 0;
+        font-size: 170%;
+        text-align: center;
+        color: forestgreen;
+    }
+    .rounds_of{
+        margin: 0;
+        font-size: 130%;
+        font-weight: 400;
+    }
+
+
+    /* Contact form */
+
+
+    #formContainerTop h1{
+        font-size: 180%;
+    }
+    #formContainerTop h3{
+        width: 85%;
+        font-size: 100%;
+        text-align: center;
+    }
+    form{
+        width: 90%;
+        height: 350px;
+        bottom: 15%;
+        border-radius: 10px;
+    }
+    .details{
+        width: 80%;
+        font-size: 80%;
+    }
+    textarea{
+        width: 80%;
+        font-size: 100%;
+    }
+    #submitBtn{
+        right: 22%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    aside{
+        display: none;
+    }
+    header{
+        height: 150px;
+    }
+    #googleAdSpace{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+    }
+    section{
+        width: 100%;
+    }
+    #calcUpper{
+        min-height: 320px;
+        margin-top: 0;
+    }
+    .calcUpperColumn{
+        min-height: 30vh;
+        margin: 0;
+    }
+    .calcUpperColumn h1{
+        font-size: 120%;
+    }
+    .calcUpperColumn select{
+        width: 75%;
+    }
+    .weaponButtons{
+        height: 60px;
+    }
+    .weaponButtonsSelected{
+        height: 60px;
+    }
+    #dollarAmount{
+        width: 75%;
+    }
+    #calcTitle{
+        position: relative;
+        bottom: 15px;
+        font-size: 180%;
+    }
+    #calcLower{
+        min-height: 40vh;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .calcLowerColumn{
+        width: 45%;
+        min-height: 30vh;
+    }
+    .rounds{
+        font-size: 250%;
+    }
+    .caliber{
+        font-size: 180%; 
+    }
+    .rounds_of{
+        margin: 10px 0;
+        font-size: 150%;
+    }
+    .upperLine{
+        top: 15%;
+        height: 1px;
+    }
+    .lowerLine{
+        bottom: 15%;
+        height: 1px;
+    }
+    #formContainerTop{
+        height: 30vh;
+    }
+    form{
+        width: 70%;
+        height: 400px;
+        bottom: 20%;
+    }
+    .details{
+        width: 80%;
+        height: 20px;
+    }
+    textArea{
+        width: 80%;
+    }
+    #submitBtn{
+        right: 30%;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1450px){
+    
+    .caliber{
+        font-size: 200%;
+    }
+    #formContainerTop{
+        height: 35vh;
+    }
+    form{
+        bottom: 16%;
+    }
+    form{
+        width: 45%;
+    }
+    .details, textarea{
+        width: 70%;
+    }
+    #submitBtn{
+        right: 25%; 
+    }
+}
